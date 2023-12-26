@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CHECKOUT</title>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+</head>
+<body>
+	<header class="header header_one" id="header">
+		<div class="container">
+			<div class="wrap" id="top_wrap">
+				<div class="logo">
+					<a href="#">
+						<img src="assets/img/mini/logo.svg" alt="womazing">
+					</a>
+				</div>
+				<div class="menu">
+        			<nav>
+        				<ul class="menu__list">
+        					<li class="menu__item menu__item_active">
+        						<a href="index.html" class="menu__item_one">Главная</a>
+        					</li>
+                    		<li class="menu__item">
+                    			<a href="shop.html" class="menu__item_one">Магазин</a>
+                    		</li>
+                    		<li class="menu__item">
+                    			<a href="brand.html" class="menu__item_one">О бренде</a>
+                    		</li>
+                    		<li class="menu__item">
+                    			<a href="contact.html" class="menu__item_one">Контакты</a>
+                    		</li>
+        				</ul>
+        				<div class="phone">
+        					<button type="button" class="phone__btn" id="btn-open">
+        						<img src="assets/img/mini/telephone.svg" alt="Телефон">
+        					</button>
+        					<a class="menu-tel__link" href="tel:+7495823-54-12">+7 (495) 823-54-12</a>
+        				</div>
+        				<div class="cart">
+        					<a href="cart.html">
+        					<img src="assets/img/mini/shopping-bags.png" class="cart__icon" alt="Корзина">
+        					</a>
+        					<span class="cart__item cart__item_active">1</span>
+        				</div>
+        			</nav>
+        		</div>
+			</div>
+			<div class="element">
+        		<h1 class="element__title">Оформление заказа</h1>
+
+        		<div class="crumbs">
+        			<li>
+                     	<a href="index.html" class="element__text">Главная</a>
+                    </li>
+                    <li class="dash"></li>
+                    <li>
+                        <p class="element__word">Оформление заказа</p>
+                    </li>
+        		</div>
+
+        	</div>
+        	<div id="wrapper-modal">
+        		<div id="overlay"></div>
+       				<div id="modal-window">
+            			<button class="btn-close close" id="btn-close"></button>
+            			<div class="content">
+            				<h3 class="content__title">Заказать обратный звонок</h3>
+                			<form action="#" class="form-book form-modal js-form" id="form-modal">
+                                <input type="text" class="form-book__input" name="text" placeholder="Имя" required>
+                                <input type="email" class="form-book__input" name="email" placeholder="E-mail" required>
+                                <input type="tel" class="form-book__input" name="tel" placeholder="Телефон" required>
+                                <button type="submit" class="btn select-btn data-submit">Заказать звонок</button>
+                            </form>
+            			</div>
+       				</div>
+    		</div>
+		</div>
+	</header>
+	<section class="data" id="data">
+		<div class="container">
+                <form action="#" id="checkout__form">
+                    <div class="checkout">
+                        <div class="checkout__wrapper-form">
+                            <h3 class="checkout__data-title">Данные покупателя</h3>
+                            <div class="checkout__form checkout__form-1" id="checkout__form-1">
+                                <input type="text" id="name" name="name" class="checkout__form-input" placeholder="Имя" required>
+                                <input type="email" id="email" name="email" class="checkout__form-input" placeholder="E-mail" required>
+                                <input type="tel" id="phone" name="tel" class="checkout__form-input" placeholder="Телефон" required> 
+                            </div>
+                        </div>
+                        <div class="checkout__your-order">
+                            <h3 class="checkout__data-title">Ваш заказ</h3>
+                            <div class="checkout__order-wrapper">
+                                 <div class="checkout__order-list">
+                                    <p class="checkout__order-subtitle">Товар</p>
+                                    <p class="checkout__order-text">Футболка USA</p>
+                                    <p class="checkout__order-text">Подытог</p>
+                                 </div>
+                                 <div class="checkout__order-price">
+                                     <p class="checkout__order-subtitle">Всего</p>
+                                     <span class="checkout__order-praces">$129</span>
+                                     <span class="checkout__order-praces">$129</span>
+                                 </div>
+                            </div>
+                            <div class="checkout__order-total">
+                                <p class="checkout__order-subtitle">Итого</p>
+                                <span class="checkout__order-price-total">$129</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__wrapper">
+                        <div class="checkout__wrapper-form">
+                            <h3 class="checkout__data-title">Адрес получателя</h3>
+                            <div class="checkout__form checkout__form-2" id="checkout__form-2">
+                                <input type="text" id="country" name="country" class="checkout__form-input" placeholder="Страна" required>
+                                <input type="text" id="city" name="city" class="checkout__form-input" placeholder="Город" required>
+                                <input type="text" id="street" name="street" class="checkout__form-input" placeholder="Улица" required>
+                                <input type="text" id="house" name="house" class="checkout__form-input" placeholder="Дом" required>
+                                <input type="text" id="flat" name="flat" class="checkout__form-input" placeholder="Квартира" required>
+                            </div>
+                        </div>
+                        <div class="checkout__payment-method">
+                            <h3 class="checkout__data-title">Способы оплаты</h3>
+                            <label class="checkout__payment-method-wrapper">
+                                <input type="checkbox" class="checkout__payment-method-btn">
+                                <span class="checkout__payment-method-btn-active"></span>
+                                <span class="checkout__payment-method-text">Оплата наличными</span>
+                            </label>
+                            <button type="submit" class="btn btn__checkout">Разместить заказ</button>
+                        </div>
+                    </div>
+                    <div class="checkout__data">
+                        <div class="checkout__wrapper-form">
+                            <h3 class="checkout__data-title">Комментарии</h3>
+                            <div action="#" class="checkout__form checkout__form-3" id="checkout__form-3">
+                                <input type="text" id="comment" name="comment" class="checkout__form-input" placeholder="Комментарий"> 
+                            </div>
+                        </div>
+                    </div>
+                </form>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="wrap__two">
+				<div class="wrap__two_one">
+					<div class="logo">
+						<a href="#">
+							<img src="assets/img/mini/logo__two.svg" alt="womazing">
+						</a>
+					</div>
+					<div class="rights">
+						<span class="rights__link">© Все права защищены</span>
+						<a href="#" class="rights__link">Политика конфиденциальности</a>
+						<a href="#" class="rights__link">Публичная оферта</a>
+					</div>
+				</div>
+				<div class="menu__two">
+					<nav>
+						<ul class="menu__list_two">
+							<li class="menu__item_two menu__item_active">
+								<a href="index.html" class="menu__item_there">Главная</a>
+							</li>
+							<li class="menu__item_two">
+								<a href="shop.html" class="menu__item_there">Магазин</a>
+								<ul class="sub-menu">
+									<li class="sub-menu_item"><a href="shop.html">Пальто</a></li>
+        							<li class="sub-menu_item"><a href="shop.html">Свитшоты</a></li>
+        							<li class="sub-menu_item"><a href="shop.html">Кардиганы</a></li>
+        							<li class="sub-menu_item"><a href="shop.html">Толстовки</a></li>
+								</ul>
+							</li>
+							<li class="menu__item_two">
+								<a href="brand.html" class="menu__item_there">О бренде</a>
+							</li>
+							<li class="menu__item_two">
+								<a href="contact.html" class="menu__item_there">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="social">
+					<div class="footer-rights">
+						<a class="menu-tel__links" href="tel:+7495823-54-12">+7 (495) 823-54-12</a>
+						<a class="social__link" href="mailto:hello@womazing.com">hello@womazing.com</a>
+					</div>
+					<div class="social__img">
+					<!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__network social__network_instagram"></a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__network social__network_facebook"></a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__network social__network_twiter"></a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="payment"></a>
+                    <!--/noindex-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	 <!-- Jquery, Popper, Bootstrap -->
+	<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="./assets/js/slick.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

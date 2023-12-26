@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CART</title>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+</head>
+<body>
+	<header class="header header_one" id="header">
+		<div class="container">
+			<div class="wrap" id="top_wrap">
+				<div class="logo">
+					<a href="#">
+						<img src="assets/img/mini/logo.svg" alt="womazing">
+					</a>
+				</div>
+				<div class="menu">
+        			<nav  class="main-menu">
+        				<ul class="menu__list">
+        					<li class="menu__item menu__item_active">
+        						<a href="index.html" class="menu__item_one">Главная</a>
+        					</li>
+                    		<li class="menu__item">
+                    			<a href="shop.html" class="menu__item_one">Магазин</a>
+                    		</li>
+                    		<li class="menu__item">
+                    			<a href="brand.html" class="menu__item_one">О бренде</a>
+                    		</li>
+                    		<li class="menu__item">
+                    			<a href="contact.html" class="menu__item_one">Контакты</a>
+                    		</li>
+        				</ul>
+        				<div class="phone">
+        					<button type="button" class="phone__btn" id="btn-open">
+        						<img src="assets/img/mini/telephone.svg" alt="Телефон">
+        					</button>
+        					<a class="menu-tel__link" href="tel:+7495823-54-12">+7 (495) 823-54-12</a>
+        				</div>
+        				<div class="cart">
+        					<a href="cart.html">
+        					<img src="assets/img/mini/shopping-bags.png" class="cart__icon" alt="Корзина">
+        					</a>
+        					<span class="cart__item cart__item_active">1</span>
+        				</div>
+        			</nav>
+        		</div>
+			</div>
+			<div class="element">
+        		<h1 class="element__title">Корзина</h1>
+
+        		<div class="crumbs">
+        			<li>
+                     	<a href="index.html" class="element__text">Главная</a>
+                    </li>
+                    <li class="dash"></li>
+                    <li>
+                        <p class="element__word">Корзина</p>
+                    </li>
+        		</div>
+
+        	</div>
+        	<div id="wrapper-modal">
+        		<div id="overlay"></div>
+       				<div id="modal-window">
+            			<button class="btn-close close" id="btn-close"></button>
+            			<div class="content">
+            				<h3 class="content__title">Заказать обратный звонок</h3>
+                			<form action="success.php" class="form-book form-modal js-form" id="form-modal">
+                                <input type="text" class="form-book__input" name="text" placeholder="Имя" required>
+                                <input type="email" class="form-book__input" name="email" placeholder="E-mail" required>
+                                <input type="tel" class="form-book__input" name="tel" placeholder="Телефон" required>
+                                <button type="submit" class="btn select-btn data-submit">Заказать звонок</button>
+                            </form>
+            			</div>
+       				</div>
+    		</div>
+		</div>
+	</header>
+	<section class="purchase" id="purchase">
+		<div class="container">
+			<div class="designation__wrap">
+                <div class="cart__titles-wrapper">
+                 	<p class="cart__titles-subtitle-1">Товар</p>
+                	<p class="cart__titles-subtitle-2">Цена</p>
+                	<p class="cart__titles-subtitle-3">Количество</p>
+                 	<p class="cart__titles-subtitle-4">Всего</p>
+            	</div>
+            </div>
+              		<div class="insides">
+                        <div class="cart__one-product">
+                            <div class="cart__wrapper-one-product">
+                                <button type="button" class="btn__one-product" id="cart__one-product"><span class="close closs__cart"></span></button>
+                                <div class="cart__one-product-image-wrapper">
+                                    <img src="assets/img/big/product.png" alt="product-cart">
+                                </div>
+                                <p class="cart__one-product-name">Футболка USA</p>
+                            </div>
+                            <span class="cart__one-product-price">$129</span>
+                            <input type="number" placeholder="1" class="cart__one-product-quantity" id="cart__one-product-quantity">
+                            <span class="cart__one-product-total">$129</span>
+                        </div>
+                        <div class="cart__infom-mobal-wrapper">
+                            <div class="cart__inform-quantity">
+                                <p class="cart__titles-subtitle-3 cart__titles-subtitle-modal">Количество</p>
+                                <input type="number" placeholder="1" class="cart__one-product-quantity cart__infom-mobal-quantity" id="cart__one-product-quantity">
+                            </div>
+                            <div class="cart__inform-totals">
+                                <p class="cart__titles-subtitle-4 cart__titles-subtitle-mobal">Всего</p>
+                                <span class="cart__one-product-total cart__infom-mobal-total ml-auto">$129</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__coupon">
+                        <div class="cart__coupon-wrapper">
+                            <form action="#" class="cart__form" id="cart__form">
+                                <input type="text" id="coupon" name="coupon" class="checkout__form-input cart__form-input" placeholder="Введите купон" required>
+                                <button type="submit" class="btn-ghost cart__form-btn" data-submit>Применить купон</button>
+                            </form>
+                            <button type="button" class="btn-ghost cart__btn">Обновить корзину</button>
+                        </div>
+                    </div>
+                    <div class="cart__total">
+                        <div class="cart__total-price-product">
+                            <p class="cart__subtotal">Подытог: <span class="cart__subtotal-price">$129</span></p>
+                            <div class="cart__total-wrapper">
+                                <div class="cart__total-product">
+                                    Итого:
+                                    <span class="cart__total-price">$129</span>
+                                </div>
+                                <a href="checkout.html" class="btn btn__cart-order">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="wrap__two">
+				<div class="wrap__two_one">
+					<div class="logo">
+						<a href="#">
+							<img src="assets/img/mini/logo__two.svg" alt="womazing">
+						</a>
+					</div>
+					<div class="rights">
+						<span class="rights__link">© Все права защищены</span>
+						<a href="#" class="rights__link">Политика конфиденциальности</a>
+						<a href="#" class="rights__link">Публичная оферта</a>
+					</div>
+				</div>
+				<div class="menu__two">
+					<nav>
+						<ul class="menu__list_two">
+							<li class="menu__item_two menu__item_active">
+								<a href="index.html" class="menu__item_there">Главная</a>
+							</li>
+							<li class="menu__item_two">
+								<a href="shop.html" class="menu__item_there">Магазин</a>
+								<ul class="sub-menu">
+									<li class="sub-menu_item"><a href="shop.html">Пальто</a></li>
+        							<li class="sub-menu_item"><a href="shop.html">Свитшоты</a></li>
+        							<li class="sub-menu_item"><a href="shop.html">Кардиганы</a></li>
+        							<li class="sub-menu_item"><a href="shop.html">Толстовки</a></li>
+								</ul>
+							</li>
+							<li class="menu__item_two">
+								<a href="brand.html" class="menu__item_there">О бренде</a>
+							</li>
+							<li class="menu__item_two">
+								<a href="contact.html" class="menu__item_there">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="social">
+					<div class="footer-rights">
+						<a class="menu-tel__links" href="tel:+7495823-54-12">+7 (495) 823-54-12</a>
+						<a class="social__link" href="mailto:hello@womazing.com">hello@womazing.com</a>
+					</div>
+					<div class="social__img">
+					<!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__network social__network_instagram"></a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__network social__network_facebook"></a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__network social__network_twiter"></a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                    <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="payment"></a>
+                    <!--/noindex-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	 <!-- Jquery, Popper, Bootstrap -->
+	<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="./assets/js/slick.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
